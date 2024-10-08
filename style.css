@@ -1,0 +1,214 @@
+@font-face {
+    font-family: JetBrains;
+    src: url(../fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins/Poppins-Light.ttf);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: absolute;
+    background-color: rgb(16, 182, 107) ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: -4px 10px 34px 7px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px 10px 34px 7px rgba(0,0,0,0.75);
+    box-shadow: -4px 10px 34px 7px rgba(0,0,0,0.75);
+    display: flex;
+    overflow: hidden;
+}
+
+.container .result-container {
+    width: 400px;
+    padding-left:15px;
+    padding-top: 70px;
+    border-left: 10px dotted #3007c6;
+}
+
+.container .result-container table tr td {
+    width: 400px;
+    height: 37px;
+    text-align: center;
+    font-family: "JetBrains Mono";
+    border-bottom: 1px solid rgb(11, 9, 155);
+}
+
+.container .result-container table tr td:hover {
+    border-bottom: 1px solid rgb(35, 8, 186);
+}
+
+
+.container .form-container {
+    width: 400px;
+    text-align: center;
+}
+
+.form-heading {
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: Poppins;
+    color: rgb(47, 227, 167);
+}
+
+.form-content th {
+    text-align: left;
+    font-family: Poppins;
+    font-size: 14px;
+    color: #dcd8e1;
+    width: 150px;
+}
+
+.form-content td {
+    position: relative;
+    width: 205px;
+    height: 30px;
+}
+
+.form-content td input{
+    width: 230px;
+    height: 25px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border: 1px solid #101413;
+    background: #0f03b5;
+}
+
+.form-content td input::placeholder {
+    color: #0522221c;
+    text-transform: capitalize;
+}
+
+.form-content td select {
+    border: none;   
+    outline: none;
+    appearance: none;
+    width: 230px;
+    height: 25px;
+    padding: 5px;
+    appearance: none;
+    background-color: rgb(48, 7, 197);
+    color: #fff;
+}
+
+.form-content td .icon-container {
+    position: absolute;
+    top: 2.5px;
+    right: 0px;
+    width: 50px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-content td .select-icon {
+    background: url(pngtree-bay-window-minimalistic-office-in-3d-image_3896787.jpg);
+    color: #2a0590;
+}
+
+.form-content td input[type="file"] {
+    border: none;
+    outline: none;
+    text-align: center;
+    justify-content: center;
+    width: 230px;
+    cursor: pointer;
+    border: 1px solid rgb(2, 4, 160);
+    padding: 0;
+    font-family: JetBrains;
+    background-color: #fff;
+}
+
+.form-content td input[type="datetime-local"] {
+    padding-right: 15px;
+}
+
+::-webkit-file-upload-button {
+    background-image: url(pngtree-bay-window-minimalistic-office-in-3d-image_3896787.jpg);
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.heading {
+    font-family: Poppins;
+    font-size: 18px;
+    color: rgb(26, 8, 190);
+    text-align: left;
+}
+
+
+.form-btn {
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+     border-radius: 4px;
+     border-width: 0;
+     box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+     box-sizing: border-box;
+     color: #36395A;
+     cursor: pointer;
+     display: inline-flex;
+     justify-content: center;
+     line-height: 1;
+    list-style: none;
+     overflow: hidden;
+     padding-left: 16px;
+     padding-right: 16px;
+     position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 16px;
+    width: 200px;
+    height: 30px;
+    margin: 20px 0;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    letter-spacing: 3px;
+    background: rgb(8, 25, 180);
+    color: #fff;
+    font-family: JetBrains;
+}
+
+.form-btn:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, 
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.form-btn:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.form-btn:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+body{
+    background-image: url(pngtree-bay-window-minimalistic-office-in-3d-image_3896787.jpg);
+
+}
